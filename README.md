@@ -63,6 +63,18 @@ src/
 - Reset de formulário com valor padrão
 - Persistência no LocalStorage
 
+## 📖 User Stories
+### ToDo
+- Como utilizador, eu quero adicionar tarefas com título e categoria para organizar minhas atividades.
+- Como utilizador, eu quero marcar tarefas como concluídas para acompanhar meu progresso.
+- Como utilizador, eu quero que minhas tarefas permaneçam salvas mesmo após atualizar a página.
+### Contacts
+- Como utilizador, eu quero cadastrar contatos para organizar minhas conexões.
+- Como utilizador, eu quero que os dados dos contatos fiquem salvos após atualizar a página.
+### Finance
+- Como utilizador, eu quero registrar entradas e saídas financeiras para controlar meus gastos.
+- Como utilizador, eu quero visualizar o saldo atualizado automaticamente.
+
 ## ▶ Como executar o projeto
 ### 1. Clone o repositório:
 git clone <url-do-repositorio>
