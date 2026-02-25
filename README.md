@@ -81,7 +81,7 @@ git clone <url-do-repositorio>
 ### 2. Instale as dependências:
 npm install
 ### 3. Execute o projeto:
-npm install
+npm run dev
 ### 4. Acesse no navegador:
 http://localhost:5173
 
