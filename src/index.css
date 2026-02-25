@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/*Isso remove toda rolagem da pagina*/
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    @apply overflow-hidden;
+  }
+}
