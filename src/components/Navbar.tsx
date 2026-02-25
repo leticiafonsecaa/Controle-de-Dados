@@ -13,7 +13,7 @@ export function Menu() {
     return (
         <nav className="bg-[#8B5E3C] h-16 flex items-center justify-between px-8 text-zinc-100 shadow-md">
             <h1 className="font-serif tracking-tight text-xl">
-                CapyBoard<span className="text-amber-500">.</span>
+                CapyBoard.</span>
             </h1>
             {/* NavLink usa a propriedade isActive para aplicar automaticamente o estilo correto conforme a rota atual */}
             <ul className="flex gap-6 font-sans">
