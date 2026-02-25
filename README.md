@@ -1,74 +1,78 @@
-# React + TypeScript + Vite
+# 🦫 CapyBoard
+### 📌 Sobre o Projeto
+CapyBoard é uma aplicação web desenvolvida com React e TypeScript com foco em prática de gerenciamento de estado, validação de formulários e persistência de dados no navegador.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A aplicação reúne três módulos principais:
 
-Currently, two official plugins are available:
+📋 ToDo – Gerenciamento de tarefas com categorias.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👥 Contacts – Cadastro e listagem de contatos.
 
-## React Compiler
+💰 Finance – Controle simples de entradas e saídas financeiras.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Os dados são persistidos utilizando LocalStorage, garantindo que as informações permaneçam salvas mesmo após atualização da página.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- React Hook Form
+- Zod
+- @hookform/resolvers
+- TailwindCSS
+- LocalStorage API
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎯 Conceitos Aplicados
+Este projeto foi desenvolvido com foco nos seguintes conceitos:
+- Componentização
+- Validação de dados com Zod
+- Integração entre React Hook Form e Zod
+- Persistência de dados no navegador
+- Tipagem com TypeScript
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# 📂 Estrutura do Projeto
+src/
+ ├── pages/
+ │    ├── ToDo/
+ │    ├── Contacts/
+ │    ├── Finance/
+ │
+ ├── schemas/
+ │    ├── todoSchema.ts
+ │    ├── contactsSchema.ts
+ │    ├── financeSchema.ts
+ │
+ ├── components/
+ ├── routes/
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ Os schemas de validação ficam separados da lógica dos componentes, seguindo o princípio de separação de responsabilidades.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+ ## 📋 Funcionalidades
+ ### ✔ ToDo
+ - Criar tarefas com título e categoria
+ - Marcar como concluída
+ - Removerr tarefas
+ - Persistência automática no LocalStorafe
+### ✔ Contacts
+- Cadastro de contatos
+- Validação de formúlarios com Zod
+- Persistência no LocalStorage
+### ✔ Finance
+- Registro de entradas e saídas
+- Validação de dados
+- Reset de formulário com valor padrão
+- Persistência no LocalStorage
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ▶ Como executar o projeto
+### 1. Clone o repositório:
+git clone <url-do-repositorio>
+### 2. Instale as dependências:
+npm install
+### 3. Execute o projeto:
+npm install
+### 4. Acesse no navegador:
+http://localhost:5173
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# Controle-de-Dados
+## Autor
+Desenvolvido como parte de estudo em Desenvolvimento Front-End.
+Feito por: *Letícia Fonseca de Brito*
