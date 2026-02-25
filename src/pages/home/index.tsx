@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export function Home() {
     return (
         <div className="h-screen overflow-x-hidden bg-[#F5EFE6]  flex flex-col items-center justify-center p-6">
-            <h1 className="text-5xl font-bold text-[#8B5E3C] mb-2">🦫 CapyBoard</h1>
+            <h1 className="text-5xl font-bold text-[#8B5E3C] mb-2">CapyBoard</h1>
 
             <p className="text-[#6B4F3A] mb-10 text-2xl text-center ">Gerencie tarefas, contatos e finanças de forma simples e eficiente.</p>
 
